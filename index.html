@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMC De Luxe</title>
+    <meta name="author" content="Anuar Baimukhanov">
+    <meta name="description" content="Тестовое задание Result Agency">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="wrapper">
+                <!-- Logo -->
+                <a href="#" class="header__logo">
+                    <img src="./assets/logo.png" alt="RMC DE LUXE">
+                </a>
+                <!-- Navigation -->
+                <nav class="header__nav tablet-hidden">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item dropdown content">
+                            <button class="dropbtn">
+                                Услуги
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.5L6 6.5L11 1.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="#" class="body-18">Купить</a>
+                              <a href="#" class="body-18">Арендовать</a>
+                              <a href="#" class="body-18">Продать</a>
+                              <a href="#" class="body-18">Оценка недвижимости</a>
+                            </div>
+                          </li>
+                        <li class="header__nav-item content">
+                            <a href="#about">О нас</a>
+                        </li>
+                        <li class="header__nav-item content">
+                            <a href="#blog">Блог</a>
+                        </li>
+                        <li class="header__nav-item content">
+                            <a href="#contact">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Buttons and Selector -->
+                <div class="header__actions">
+                    <button class="header__button">
+                        <img src="./assets/icons/search.svg" alt="">
+                    </button>
+                    <button class="header__button">
+                        <img src="./assets/icons/heart.svg" alt="">
+                    </button>
+                    <button class="header__button black-bg tablet-hidden">
+                        <img src="./assets/icons/phone.svg" alt="">
+                    </button>
+                    <button class="header__button black-bg burger-button tablet-visible desktop-hidden">
+                        <span class="line line-1"></span>
+                        <span class="line line-2"></span>
+                        <span class="line line-3"></span>
+                    </button>
+                    <select class="header__selector lang-selector content tablet-hidden">
+                        <option value="ru" selected>Ru</option>
+                        <option value="eng">Eng</option>
+                        <option value="kz">Kz</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Main | first section-->
+    <main class="main" id="main">
+        <div class="container">
+            <section class="first-section">
+                <div class="first-section__right">
+                    <h1 class="first-section__title headline-1">
+                        Найдите идеальное место для жизни
+                    </h1>
+                    <p class="first-section__suptitle content">
+                        Откройте двери в новое будущее с нами
+                    </p>
+                    <button class="first-section__button btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="first-section__left">
+                    <button class="slider-button prev">
+                        <img src="./assets/icons/arrow-white.svg" alt="">
+                    </button>
+                    <button class="slider-button next">
+                        <img src="./assets/icons/arrow-white.svg" alt="">
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Second section | about company-->
+    <div class="container" id="about">
+        <section class="second-section">
+            <div class="second-section__top">
+                <h2 class="second-section__title headline-2">
+                    О компании <br>
+                    <span>RMC DE LUXE</span>
+                </h2>
+                <div class="second-section__tabs">
+                    <div class="tabs__top">
+                        <button class="rent-button tabs-button active-tab">Аренда</button>
+                        <button class="sell-button tabs-button content">Купля - продажа</button>
+                        <button class="management-button tabs-button content">Управление</button>
+                    </div>
+                    <div class="tabs__bottom">
+                        <p class="tabs__info content">
+                            Широкий выбор объектов: Мы предлагаем разнообразные варианты аренды – от квартир и домов до коммерческих помещений, удовлетворяющие любые потребности
+                        </p>
+                        <p class="tabs__info content">
+                            Надежные арендаторы: Проведение тщательной проверки и отбора арендаторов для обеспечения стабильного дохода и минимизации рисков
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="second-section__bottom">
+                <div class="second-section__buttons">
+                    <button class="slider-button prev">
+                        <img src="./assets/icons/arrow-white.svg" alt="">
+                    </button>
+                    <button class="slider-button next">
+                        <img src="./assets/icons/arrow-white.svg" alt="">
+                    </button>
+                </div>
+                <img src="./assets/img/building-bg.jpg" alt="Building">
+            </div>
+        </section>
+    </div>
+    <!-- Third section | invest-->
+    <section class="third-section" id="invest">
+        <div class="container">
+            <div class="wrapper">
+                <div class="third-section__left">
+                    <h2 class="third-section__title headline-2">
+                        Инвестиции в недвижимость в Дубае
+                    </h2>
+                    <p class="content">
+                        Недвижимость в Дубае предоставляет отличные возможности для получения стабильного дохода и увеличения капитала
+                    </p>
+                    <p class="content">
+                        Полный цикл инвестиций: От анализа рынка и подбора объектов до управления инвестициями и их реализации.
+                    </p>
+                    <p class="content">
+                        Наши эксперты помогут вам на всех этапах инвестиционного процесса, обеспечивая высокое качество обслуживания и надежность.
+                    </p>
+                    <p class="content">
+                        Наши услуги включают управление вашей инвестиционной недвижимостью, обеспечивая её сохранность и стабильный доход. Мы берем на себя все аспекты управления, включая подбор и проверку арендаторов, техническое обслуживание, финансовую отчетность и юридическую поддержку.
+                    </p>
+                    <button class="third-sectino__btn btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="third-section__right">
+                    <div class="third-section__right-container">
+                        <img src="./assets/img/building-1.jpg" alt="building">
+                        <img src="./assets/img/building-2.jpg" alt="building">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fourth section | services -->
+    <div class="fourth-section" id="services">
+        <div class="container">
+            <h2 class="fourth-section__title headline-2">
+                Что входит в услугу <br> управления недвижимостью
+            </h2>
+            <div class="wrapper">
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Проверка арендаторов (кредитная история, рекомендации)</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Регулярное техническое обслуживание</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Подготовка и подписание договоров аренды</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Организация и проведение ремонтных работ</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Сбор арендной платы</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Контроль за состоянием недвижимости</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Обработка запросов и жалоб арендаторов</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Подбор надежных арендаторов</span>
+                </div>
+                <div class="service">
+                    <img src="./assets/icons/checkmark.svg" alt="">
+                    <span class="accent">Контроль соблюдения условий аренды</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fifth section | why us-->
+    <section class="fifth-section">
+        <div class="container">
+            <h2 class="fifth-section__title headline-2">
+                Почему выбирают нас
+            </h2>
+            <div class="wrapper">
+                <div class="card card-content">
+                    <h4 class="card__title headline-4">Опыт и профессионализм</h4>
+                    <p class="card__content content">
+                        Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/why-us-1.jpg" alt="1">
+                </div>
+                <div class="card card-content">
+                    <h4 class="card__title headline-4">Прозрачность и доверие</h4>
+                    <p class="card__content content">
+                        Обеспечение полной прозрачности всех операций и предоставление отчетов. Работа основана на принципах честности и доверия, что подтверждается отзывами
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/why-us-2.jpg" alt="2">
+                </div>
+                <div class="card card-content">
+                    <h4 class="card__title headline-4">Высокий уровень обслуживания</h4>
+                    <p class="card__content content">
+                        Мы всегда на связи, чтобы помочь вам в любое время
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/why-us-3.jpg" alt="3">
+                </div>
+                <div class="card card-content">
+                    <h4 class="card__title headline-4">Опыт и профессионализм</h4>
+                    <p class="card__content content">
+                        Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что гарантирует высокое качество услуг
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/img/why-us-4.jpg" alt="4">
+                </div>
+                <div class="card card-content">
+                    <h4 class="card__title headline-4">Прозрачность и доверие</h4>
+                    <p class="card__content content">
+                        Обеспечение полной прозрачности всех операций и предоставление отчетов. Работа основана на принципах честности и доверия, что подтверждается отзывами
+                    </p>
+                </div>
+                <div class="card desktop-hidden tablet-visible mini-tablet-hidden">
+                    <img src="./assets/img/why-us-5.jpg" alt="1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sixth section | Slider-->
+    <section class="sixth-section" id="new-buildings">
+        <div class="container">
+            <div class="sixth-section__top">
+                <h2 class="sixth-section__title headline-2">Новостройки</h2>
+                <div class="sixth-section__left mini-tablet-hidden  ">
+                    <button class="slider-button prev">
+                        <img src="./assets/icons/arrow-dark.svg" alt="">
+                    </button>
+                    <button class="slider-button next">
+                        <img src="./assets/icons/arrow-dark.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="sixth-section__slider">
+                <div class="sixth-section__card">
+                    <img src="./assets/img/new-building-1.jpg" alt="new building 1" class="card__image">
+                    <img src="./assets/icons/white-heart.svg" alt="" class="card__icon">
+                    <div class="card__info">
+                        <h3 class="card__title headline-3">Safa One</h3>
+                        <p class="card__price body-20">от $1 900 000</p>
+                    </div>
+                </div>
+                <div class="sixth-section__card">
+                    <img src="./assets/img/new-building-2.jpg" alt="new building 2" class="card__image">
+                    <img src="./assets/icons/white-heart.svg" alt="" class="card__icon">
+                    <div class="card__info">
+                        <h3 class="card__title headline-3">Safa Two</h3>
+                        <p class="card__price body-20">от $399 000</p>
+                    </div>
+                </div>
+                <div class="sixth-section__card">
+                    <img src="./assets/img/new-building-3.jpg" alt="new building 3" class="card__image">
+                    <img src="./assets/icons/white-heart.svg" alt="" class="card__icon">
+                    <div class="card__info">
+                        <h3 class="card__title headline-3">Peninsula Two</h3>
+                        <p class="card__price body-20">от $245 000</p>
+                    </div>
+                </div>
+                <div class="sixth-section__card">
+                    <img src="./assets/img/new-building-4.jpg" alt="new building 4" class="card__image">
+                    <img src="./assets/icons/white-heart.svg" alt="" class="card__icon">
+                    <div class="card__info">
+                        <h3 class="card__title headline-3">Marina Vista</h3>
+                        <p class="card__price body-20">от $612 000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sixth-section__bottom">
+                <button class="sixth-section__button btn">Смотреть все</button>
+            </div>
+        </div>
+    </section>
+    <!-- Seventh-section | calculator-->
+    <section class="seventh-section" id="calculator">
+        <div class="container">
+            <h2 class="seventh-section__title headline-2">Рассчитайте ипотеку</h2>
+            <div class="seventh-section__bills">
+                <div class="bills__actions">
+                    <div class="bills__labels">
+                        <label>
+                            <span class="label">Стоимость недвижимости (у.е.)</span>
+                            <input type="number" placeholder="Введите стоимость" class="bills__input body-18">
+                        </label>
+                        <label>
+                            <span class="label">Первоначальный взнос (у.е.)</span>
+                            <input type="number" placeholder="Введите размер взноса" class="bills__input body-18">
+                        </label>
+                        <label>
+                            <span class="label">Срок в годах</span>
+                            <input type="number" placeholder="Введите срок" class="bills__input body-18">
+                        </label>
+                        <label>
+                            <span class="label">Ставка (%)</span>
+                            <input type="number" placeholder="Введите размер ставки" class="bills__input body-18">
+                        </label>
+                    </div>
+                    <button class="seventh-section__button btn">Рассчитать</button>
+                </div>
+                <div class="bills__info">
+                    <div>
+                        <p class="body-18">Ежемесячный платеж</p>
+                        <span class="subtitle-25">4 410 у.е.</span>
+                    </div>
+                    <div>
+                        <p class="body-18">Сумма кредита</p>
+                        <span class="subtitle-25">200 000 у.е.</span>
+                    </div>
+                    <div>
+                        <p class="body-18">Процентная ставка</p>
+                        <span class="subtitle-25">24%</span>
+                    </div>
+                    <div>
+                        <p class="body-18"> Дата последнего платежа</p>
+                        <span class="subtitle-25">28 июля 2034 г</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- eighth-section | form -->
+    <section class="eighth-section" id="contact">
+        <div class="container">
+            <div class="wrapper">
+                <form class="eighth-section__form form">
+                    <h2 class="eighth-section__title headline-2">
+                        Остались вопросы? Свяжитесь с нами
+                    </h2>
+                    <label>
+                        <span>ФИО</span>
+                        <input type="text" class="form-input full-name-input">
+                    </label>
+                    <label>
+                        <span>Номер телефона</span>
+                        <input type="tel" class="form-input phone-input">
+                    </label>
+                    <label>
+                        <span>E-mail</span>
+                        <input type="email" class="form-input email-input">
+                    </label>
+                    <label>
+                        <span>Ваш вопрос</span>
+                        <input type="text" class="form-input question-input">
+                    </label>
+                    <button type="submit" class="eighth-section__button btn">Отправить</button>
+                </form>
+                <div class="image">
+                    <img src="./assets/img/form-img.jpg" alt="high building">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ninth section blog -->
+    <section class="ninth-section" id="blog">
+        <div class="container">
+            <h2 class="ninth-section__title headline-2">Блог</h2>
+            <div class="wrapper">
+                <div class="ninth-section__card">
+                    <div class="card__image">
+                        <img src="./assets/img/blog-1.jpg" class="img" alt="blog-1">
+                        <time datetime="2024-07-31" class="time body-20">31.07.2024</time>
+                        <span class="viewers body-20"><img src="./assets/icons/eye.svg" alt="">899</span>
+                    </div>
+                    <p class="card__subtitle subtitle-24">
+                        Тенденции и прогнозы рынка недвижимости на 2024 год
+                    </p>
+                    <a href="#" class="more link-btn">Подробнее <img src="./assets/icons/arrow-beigie.svg" alt=""></a>
+                </div>
+                <div class="ninth-section__card">
+                    <div class="card__image">
+                        <img src="./assets/img/blog-2.jpg" class="img" alt="blog-2">
+                        <time datetime="2024-07-31" class="time body-20">31.07.2024</time>
+                        <span class="viewers body-20"><img src="./assets/icons/eye.svg" alt="">899</span>
+                    </div>
+                    <p class="card__subtitle subtitle-24">
+                        Лучшие районы для инвестиций в недвижимость
+                    </p>
+                    <a href="#" class="more link-btn">Подробнее <img src="./assets/icons/arrow-beigie.svg" alt=""></a>
+                </div>
+                <div class="ninth-section__card">
+                    <div class="card__image">
+                        <img src="./assets/img/blog-3.jpg" class="img" alt="blog-3">
+                        <time datetime="2024-07-31" class="time body-20">31.07.2024</time>
+                        <span class="viewers body-20"><img src="./assets/icons/eye.svg" alt="">899</span>
+                    </div>
+                    <p class="card__subtitle subtitle-24">
+                        Топ-10 новых жилых комплексов
+                    </p>
+                    <a href="#" class="more link-btn">Подробнее <img src="./assets/icons/arrow-beigie.svg" alt=""></a>
+                </div>
+                <div class="ninth-section__card desktop-hidden tablet-visible">
+                    <div class="card__image">
+                        <img src="./assets/img/blog-4.jpg" class="img" alt="blog-4">
+                        <time datetime="2024-07-31" class="time body-20">31.07.2024</time>
+                        <span class="viewers body-20"><img src="./assets/icons/eye.svg" alt="">899</span>
+                    </div>
+                    <p class="card__subtitle subtitle-24">
+                        Элитные апартаменты становятся всё более популярными
+                    </p>
+                    <a href="#" class="more link-btn">Подробнее <img src="./assets/icons/arrow-beigie.svg" alt=""></a>
+                </div>
+            </div>
+            <button class="ninth-section__button btn">Все статьи</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__header">
+                <a href="#" class="footer-logo">
+                    <img src="./assets/logo.png" alt="RMC De Luxe">
+                </a>
+                <div class="socials">
+                    <a href="#" title="Instagram"><img src="./assets/icons/insta.svg" alt=""></a>
+                    <a href="#" title="Telegram"><img src="./assets/icons/telegram.svg" alt=""></a>
+                    <a href="#" title="facebook"><img src="./assets/icons/facebook.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__body">
+                <ul class="footer__links-list">
+                    <li class="footer__link-item">
+                         <a href="#services" class="subtitle subtitle-24">Услуги</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Купить</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Арендовать</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Продать</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Оценить</a>
+                    </li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__link-item">
+                         <a href="#" class="subtitle subtitle-24">Недвижимость</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Квартиры</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#new-buildings" class="footer-link content">Новостройки</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Дома и участки</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#" class="footer-link content">Коммерческая</a>
+                    </li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__link-item">
+                         <a href="#main" class="subtitle subtitle-24">Компания</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#about" class="footer-link content">О нас</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#blog" class="footer-link content">Блог</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#contact" class="footer-link content">Контакты</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#contact" class="footer-link content">Связаться</a>
+                    </li>
+                </ul>
+                <ul class="footer__links-list">
+                    <li class="footer__link-item">
+                         <a href="#" class="subtitle subtitle-24">Другое</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#calculator" class="footer-link content">Ипотечный калькулятор</a>
+                    </li>
+                    <li class="footer__link-item">
+                        <a href="#invest" class="footer-link content">Инвестиции в недвижимость в Дубае</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copy">
+                <p class="label copy-text">2024 © RMC De Luxe real estate LLC. Все права защищены</p>
+                <img src="./assets/footer-logo.png" alt="Result">
+            </div>
+        </div>
+    </footer>
+
+    <div class="layer desktop-hidden"></div>
+    <div class="side-menu desktop-hidden">
+        <div class="side-menu__header">
+            <select class="header__selector lang-selector content">
+                <option value="ru" selected>Ru</option>
+                <option value="eng">Eng</option>
+                <option value="kz">Kz</option>
+            </select>
+            <button class="close-btn black-bg"></button>
+        </div>
+        <div class="side-menu__body">
+            <nav class="side-menu__navbar">
+                <ul class="side-menu__list">
+                    <li class="side-menu__item accent">
+                        <button class="side-menu__dropBtn">
+                            Услуги
+                            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.5L6 6.5L11 1.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <ul class="side-menu__dropdown-content">
+                            <li class="side-menu__dropdown-link">
+                                <a href="#" class="side-menu__link">Купить</a>
+                            </li>
+                            <li class="side-menu__dropdown-link">
+                                <a href="#" class="side-menu__link">Арендовать</a>
+                            </li>
+                            <li class="side-menu__dropdown-link">
+                                <a href="#" class="side-menu__link">Продать</a>
+                            </li>
+                            <li class="side-menu__dropdown-link">
+                                <a href="#" class="side-menu__link">Оценка недвижимости</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="side-menu-item accent">
+                        <a href="#about">О нас</a>
+                    </li>
+                    <li class="side-menu-item accent">
+                        <a href="#blog">Блог</a>
+                    </li>
+                    <li class="side-menu-item accent">
+                        <a href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <button class="side-menu__button btn">Задать вопрос</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
